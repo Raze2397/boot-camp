@@ -19,6 +19,12 @@ public class Room {
 		reservedDaysLeft=0;
 		
 	}
+	public void reserveRoom(short days) {
+		setStatus(RoomStatus.OCCUPIED);
+	    setReservedDaysLeft(days);
+		
+	}
+	
 	public RoomCategories getCategory() {
 		return category;
 	}
